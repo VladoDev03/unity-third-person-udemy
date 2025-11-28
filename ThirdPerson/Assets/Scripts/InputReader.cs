@@ -4,10 +4,12 @@ using UnityEngine.InputSystem;
 
 public class InputReader : MonoBehaviour, Controls.IPlayerActions
 {
-    public Vector2 MovementValue {  get; private set; }
+    public Vector2 MovementValue { get; private set; }
 
     public event Action JumpEvent;
     public event Action DodgeEvent;
+    public event Action TargetEvent;
+    public event Action CancelEvent;
 
     private Controls controls;
 
@@ -51,5 +53,26 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
 
     public void OnLook(InputAction.CallbackContext context)
     {
+    }
+
+    public void OnTarget(InputAction.CallbackContext context)
+    {
+        if (!context.performed)
+        {
+            return;
+        }
+
+        TargetEvent?.Invoke();
+    }
+
+    public void OnCancel(InputAction.CallbackContext context)
+    {
+
+        if (!context.performed)
+        {
+            return;
+        }
+
+        CancelEvent?.Invoke();
     }
 }
