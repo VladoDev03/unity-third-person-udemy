@@ -509,6 +509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c863bcc7f68393946b647021fdfc9904, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Targeter
+  cineTargetGroup: {fileID: 0}
 --- !u!1 &1523675915485929414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,6 +2413,7 @@ GameObject:
   - component: {fileID: 234351936870552619}
   - component: {fileID: 3210221262297546057}
   - component: {fileID: 7369711672554571320}
+  - component: {fileID: 6843810354467401466}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2469,7 +2471,9 @@ MonoBehaviour:
   <Controller>k__BackingField: {fileID: 7369711672554571320}
   <Animator>k__BackingField: {fileID: 3210221262297546057}
   <Targeter>k__BackingField: {fileID: 6827339597614721340}
+  <ForceReceiver>k__BackingField: {fileID: 6843810354467401466}
   <FreeLookMovementSpeed>k__BackingField: 6
+  <TargetingMovementSpeed>k__BackingField: 5
   <RotationDamping>k__BackingField: 10
 --- !u!95 &3210221262297546057
 Animator:
@@ -2518,6 +2522,19 @@ CharacterController:
   m_SkinWidth: 0.025
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.875, z: 0}
+--- !u!114 &6843810354467401466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353929175056408209}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94657f702b6b064f93cc1153f3bb073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForceReceiver
+  controller: {fileID: 7369711672554571320}
 --- !u!1 &7397473013543793672
 GameObject:
   m_ObjectHideFlags: 0
