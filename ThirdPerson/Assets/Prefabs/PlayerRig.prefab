@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 250334480933526468}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03129076, y: -0.000028532708, z: 0.00000089324743, w: 0.99951035}
+  m_LocalRotation: {x: 0.06864546, y: -0.000028609902, z: 0.0000019685838, w: 0.99764115}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -145,8 +145,8 @@ MonoBehaviour:
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
   m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
+    m_BlendHint: 2
+    m_InheritPosition: 1
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
@@ -177,7 +177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 270130410824834109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.067577265, y: -0.000028481429, z: 0.000001929107, w: 0.99771404}
+  m_LocalRotation: {x: 0.10483943, y: -0.000028689676, z: 0.0000030244767, w: 0.9944892}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineOrbitalTransposer
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 0.5, z: -6}
+  m_FollowOffset: {x: 0, y: 0.9497144, z: -5.937143}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -420,8 +420,8 @@ MonoBehaviour:
   m_LookaheadTime: 0
   m_LookaheadSmoothing: 0
   m_LookaheadIgnoreY: 0
-  m_HorizontalDamping: 0.5
-  m_VerticalDamping: 0.5
+  m_HorizontalDamping: 0
+  m_VerticalDamping: 0.1
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0
@@ -457,9 +457,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineTransposer
   m_BindingMode: 1
   m_FollowOffset: {x: 0, y: 0, z: -10}
-  m_XDamping: 1
-  m_YDamping: 1
-  m_ZDamping: 1
+  m_XDamping: 0
+  m_YDamping: 0
+  m_ZDamping: 0
   m_AngularDampingMode: 0
   m_PitchDamping: 0
   m_YawDamping: 0
@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineOrbitalTransposer
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 0.5, z: -6}
+  m_FollowOffset: {x: 0, y: 0.9497144, z: -5.937143}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Cinemachine::Cinemachine.CinemachineOrbitalTransposer
   m_BindingMode: 4
-  m_FollowOffset: {x: 0, y: 0.5, z: -6}
+  m_FollowOffset: {x: 0, y: 0.9497144, z: -5.937143}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -789,8 +789,8 @@ MonoBehaviour:
     m_ActivateAfter: 0
     m_MinDuration: 0
   m_DefaultBlend:
-    m_Style: 1
-    m_Time: 0.5
+    m_Style: 2
+    m_Time: 0.25
     m_CustomCurve:
       serializedVersion: 2
       m_Curve: []
@@ -806,6 +806,24 @@ MonoBehaviour:
   - m_Hash: 802862905
     m_ParentHash: 1545400839
   - m_Hash: 1628825299
+    m_ParentHash: -1109648533
+  - m_Hash: 551906378
+    m_ParentHash: 1628825299
+  - m_Hash: -195531666
+    m_ParentHash: 1628825299
+  - m_Hash: 908342418
+    m_ParentHash: 1628825299
+  - m_Hash: -319353866
+    m_ParentHash: 1628825299
+  - m_Hash: 358988483
+    m_ParentHash: -1109648533
+  - m_Hash: -1939018887
+    m_ParentHash: -1109648533
+  - m_Hash: 1650625109
+    m_ParentHash: -1109648533
+  - m_Hash: 859051893
+    m_ParentHash: -1109648533
+  - m_Hash: -593774410
     m_ParentHash: -1109648533
 --- !u!1 &6653406490263247914
 GameObject:
@@ -835,7 +853,7 @@ Transform:
   m_GameObject: {fileID: 6653406490263247914}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4132648, y: 25.973413, z: -28.868835}
+  m_LocalPosition: {x: 2.4132648, y: 26.423128, z: -28.805979}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -877,8 +895,8 @@ MonoBehaviour:
     FocusDistance: 10
     m_SensorSize: {x: 1, y: 1}
   m_Transitions:
-    m_BlendHint: 0
-    m_InheritPosition: 0
+    m_BlendHint: 2
+    m_InheritPosition: 1
     m_OnCameraLive:
       m_PersistentCalls:
         m_Calls: []
@@ -1053,7 +1071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7345165628601265358}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04941818, y: -0.000028511806, z: 0.0000014107253, w: 0.99877816}
+  m_LocalRotation: {x: 0.08673283, y: -0.00002777361, z: 0.0000024179958, w: 0.9962316}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
