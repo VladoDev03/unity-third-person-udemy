@@ -2133,10 +2133,12 @@ MonoBehaviour:
   <ForceReceiver>k__BackingField: {fileID: 4058389133716370791}
   <Agent>k__BackingField: {fileID: 4081818810619941284}
   <Weapon>k__BackingField: {fileID: 3280238367460433637}
+  <Health>k__BackingField: {fileID: 4863916134054439634}
   <MovementSpeed>k__BackingField: 3
   <PlayerChasingRange>k__BackingField: 10
   <AttackRange>k__BackingField: 1.5
   <AttackDamage>k__BackingField: 20
+  <AttackKnockback>k__BackingField: 10
 --- !u!114 &8984489881663201845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2175,6 +2177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ForceReceiver
   controller: {fileID: 4530789218224591403}
+  agent: {fileID: 4081818810619941284}
   drag: 0.3
 --- !u!114 &3392892202758990595
 MonoBehaviour:

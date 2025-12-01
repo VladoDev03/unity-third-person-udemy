@@ -15,7 +15,7 @@ public class PlayerAttackingState : PlayerBaseState
 
     public override void Enter()
     {
-        stateMachine.Weapon.SetAttack(attack.Damage);
+        stateMachine.Weapon.SetAttack(attack.Damage, attack.Knockback);
         stateMachine.Animator.CrossFadeInFixedTime(attack.AnimationName, attack.TransitionDuration);
     }
 
@@ -53,9 +53,7 @@ public class PlayerAttackingState : PlayerBaseState
         previousFrameTime = normalizedTime;
     }
 
-    public override void Exit()
-    {
-    }
+    public override void Exit() { }
 
     private void TryComboAttack(float normalizedTime)
     {
